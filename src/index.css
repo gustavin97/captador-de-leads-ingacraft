@@ -38,8 +38,6 @@ img{max-width:100%}
 .site-header{position:sticky;top:0;z-index:30;background:#fff;border-bottom:3px solid #eb6138;box-shadow:0 8px 22px rgba(28,31,31,.09)}
 .header-inner{min-height:84px;display:flex;align-items:center;justify-content:space-between;gap:25px}
 .brand{display:inline-flex;align-items:center;gap:10px;flex:none}
-.brand-mark{width:38px;height:38px;display:grid;place-items:center;background:#eb6138;border-radius:4px;color:#1c1f1f;transform:rotate(-8deg)}
-.brand-mark svg{transform:rotate(8deg)}
 .brand-word{font-family:"Sora",sans-serif;font-size:24px;font-weight:800;letter-spacing:-.085em;line-height:1}
 .brand-word span{font-weight:500}
 .brand-word{white-space:nowrap}
@@ -253,8 +251,6 @@ img{max-width:100%}
 .footer-kicker{display:inline-flex;align-items:center;gap:9px;margin-bottom:30px;color:#e4eb55;font:500 14px "DM Mono",monospace;letter-spacing:.12em}
 .footer-kicker i{width:8px;height:8px;background:#eb6138;border-radius:50%}
 .footer-brand .brand{gap:14px}
-.footer-brand .brand-mark{width:50px;height:50px}
-.footer-brand .brand-mark svg{width:27px;height:27px}
 .footer-brand .brand-word{font-size:37px}
 .footer-brand>p{max-width:510px;margin:27px 0 31px;color:#e2e6df;font:600 25px/1.45 "Sora",sans-serif;letter-spacing:-.045em}
 .footer-brand>p strong{color:#e4eb55;font-weight:800}
@@ -325,7 +321,6 @@ img{max-width:100%}
   .announcement-track{animation-duration:24s}
   .header-inner{min-height:69px;gap:10px}
   .brand-word{font-size:18px}
-  .brand-mark{width:28px;height:28px}
   .header-cta{min-height:39px;gap:6px;padding:0 9px;font-size:13px;box-shadow:3px 3px 0 #1c1f1f}
   .header-cta svg{width:14px}
   .hero-grid{padding-top:52px;padding-bottom:42px;gap:46px}
@@ -390,7 +385,6 @@ img{max-width:100%}
   .final-cta span{font-size:15px}
   .final-star{width:40px;right:13px;top:30px}
   .footer-main{grid-template-columns:1fr;gap:49px;padding-block:61px 54px}
-  .footer-brand .brand-mark{width:43px;height:43px}
   .footer-brand .brand-word{font-size:31px}
   .footer-brand>p{margin:23px 0 28px;font-size:23px}
   .footer-navigation{grid-template-columns:1fr;gap:40px}
