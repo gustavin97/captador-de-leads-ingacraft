@@ -118,6 +118,7 @@ img{max-width:100%}
 
 /* Dark showcase */
 .showcase{overflow:hidden;background:#1c1f1f;color:#fff}
+.showcase.section-padding{padding-bottom:0}
 .showcase-grid{display:grid;grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr);gap:50px;align-items:center}
 .section-kicker-light{color:#a7ada7}
 .section-kicker-light::before{background:#e4eb55}
