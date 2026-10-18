@@ -33,7 +33,6 @@ export default function Footer() {
         <span>© {new Date().getFullYear()} IngaCraft. Todos os direitos reservados.</span>
         <span>Black November · Maringá, PR</span>
       </div>
-      <div className="footer-wordmark" aria-hidden="true">INGACRAFT</div>
     </footer>
   );
 }
