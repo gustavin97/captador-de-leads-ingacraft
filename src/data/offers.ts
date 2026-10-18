@@ -22,7 +22,7 @@ export const offers: Offer[] = [
       "Mais de 3 páginas",
       "Automação de formulário de leads direto no WhatsApp",
       "Botões de contato",
-      "Domínio profissional + e-mail profissional",
+      "Domínio profissional",
       "Design empresarial moderno",
     ],
     label: "Mais procurado",
