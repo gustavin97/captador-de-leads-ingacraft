@@ -36,7 +36,8 @@ img{max-width:100%}
 .brand-mark svg{transform:rotate(8deg)}
 .brand-word{font-family:"Sora",sans-serif;font-size:24px;font-weight:800;letter-spacing:-.085em;line-height:1}
 .brand-word span{font-weight:500}
-.brand-word i{font-style:normal;color:#eb6138}
+.brand-word{white-space:nowrap}
+.brand-word small{font-size:.55em;font-weight:700;letter-spacing:.02em;color:#eb6138}
 .brand-inverse{color:#fff}
 .header-nav{display:flex;align-items:center;gap:32px;margin-left:auto;margin-right:22px}
 .header-nav a{position:relative;padding:10px 1px;font-size:14px;font-weight:800;transition:color .2s}

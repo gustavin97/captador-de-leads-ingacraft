@@ -30,7 +30,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="container footer-bottom">
-        <span>© {new Date().getFullYear()} IngaCraft. Todos os direitos reservados.</span>
+        <span>© {new Date().getFullYear()} INGACRAFT - TECNOLOGIA. Todos os direitos reservados.</span>
         <span>Black November · Maringá, PR</span>
       </div>
     </footer>
