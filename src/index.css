@@ -202,6 +202,9 @@ img{max-width:100%}
 .offer-site .offer-card-bottom button{background:#e4eb55;box-shadow:5px 5px 0 #1c1f1f;color:#1c1f1f}
 .offer-site .offer-card-bottom button:hover,.offer-site .offer-card-bottom button:focus-visible{background:#f1f78c;box-shadow:7px 7px 0 #1c1f1f}
 .offer-site .offer-button-icon{background:#1c1f1f;color:#e4eb55}
+.offers-urgency{display:flex;align-items:center;gap:14px;margin:0 0 28px;padding:16px 20px;background:#1c1f1f;border-left:5px solid #eb6138;border-radius:3px;color:#e2e6df;font-size:16px;line-height:1.55}
+.offers-urgency svg{flex:none;color:#e4eb55}
+.offers-urgency strong{color:#fff}
 .offers-note{display:flex;align-items:start;gap:10px;max-width:790px;margin:23px auto 0;color:#666e66;text-align:center;font-size:14px;line-height:1.7}
 .offers-note span{color:#eb6138;font-size:18px;line-height:1.2}
 

@@ -9,7 +9,7 @@ const projects = [
 const stripPhrases = [
   "BLACK NOVEMBER",
   "50% OFF",
-  "O MÊS INTEIRO",
+  "ATÉ 30 DE NOVEMBRO",
   "SEU SITE PELA METADE DO PREÇO",
   "SÓ EM NOVEMBRO",
   "TIRE SEU PROJETO DO PAPEL",
@@ -33,7 +33,7 @@ export default function Showcase({ onContact }: { onContact: () => void }) {
           <p className="showcase-lede">Em novembro, site institucional, landing page e loja virtual saem com 50% OFF. Projetos como este, feitos para passar confiança e trazer clientes.</p>
           <ul className="showcase-list">
             <li><Check size={16} /> 50% OFF em todos os projetos</li>
-            <li><Check size={16} /> Válido durante todo o mês de novembro</li>
+            <li><Check size={16} /> Válido até 30 de novembro de 2026</li>
             <li><Check size={16} /> Funciona no computador e no celular</li>
           </ul>
           <button onClick={onContact} className="button button-lime">Quero meu projeto com 50% OFF <ArrowUpRight size={19} /></button>

@@ -4,7 +4,7 @@ import Brand from "../ui/Brand";
 export default function Header({ onContact }: { onContact: () => void }) {
   return (
     <>
-      <div className="announcement" role="marquee" aria-label="Black November IngaCraft: 50% OFF, ofertas durante todo o mês">
+      <div className="announcement" role="marquee" aria-label="Black November IngaCraft: 50% OFF, válido até 30 de novembro de 2026">
         <div className="announcement-track" aria-hidden="true">
           {[0, 1].map((copy) => (
             <div className="announcement-group" key={copy}>
@@ -15,7 +15,7 @@ export default function Header({ onContact }: { onContact: () => void }) {
                   <span className="announcement-separator">✳</span>
                   <strong className="announcement-off">50% OFF</strong>
                   <span className="announcement-separator">✳</span>
-                  <span>OFERTAS DURANTE TODO O MÊS</span>
+                  <span>VÁLIDO ATÉ 30/11/2026</span>
                 </span>
               ))}
             </div>
