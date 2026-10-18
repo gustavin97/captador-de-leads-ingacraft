@@ -26,14 +26,14 @@ img{max-width:100%}
 .section-heading h2,.offers h2,.process h2,.faq h2,.showcase h2,.final-cta h2{font-family:"Sora",sans-serif;letter-spacing:-.055em;font-weight:800}
 
 /* Announcement and navigation */
-.announcement{min-height:36px;display:flex;align-items:center;overflow:hidden;background:#1c1f1f;color:#e4eb55;font:500 13px/1 "DM Mono",monospace;letter-spacing:.13em;white-space:nowrap}
+.announcement{min-height:46px;display:flex;align-items:center;overflow:hidden;background:#1c1f1f;color:#e4eb55;font:500 15px/1 "DM Mono",monospace;letter-spacing:.13em;white-space:nowrap}
 .announcement-track{display:flex;width:max-content;animation:announcement-scroll 32s linear infinite}
 .announcement:hover .announcement-track{animation-play-state:paused}
-.announcement-group,.announcement-item{display:flex;align-items:center;gap:15px}
-.announcement-item{padding-right:15px}
-.announcement-dot{width:5px;height:5px;flex:none;border-radius:50%;background:#eb6138}
-.announcement-separator{font-size:16px;color:#fff}
-.announcement-off{padding:4px 7px;background:#eb6138;border-radius:2px;color:#1c1f1f;font-weight:700}
+.announcement-group,.announcement-item{display:flex;align-items:center;gap:18px}
+.announcement-item{padding-right:18px}
+.announcement-dot{width:6px;height:6px;flex:none;border-radius:50%;background:#eb6138}
+.announcement-separator{font-size:18px;color:#fff}
+.announcement-off{padding:5px 9px;background:#eb6138;border-radius:2px;color:#1c1f1f;font-weight:700}
 @keyframes announcement-scroll{to{transform:translateX(-50%)}}
 .site-header{position:sticky;top:0;z-index:30;background:#fff;border-bottom:3px solid #eb6138;box-shadow:0 8px 22px rgba(28,31,31,.09)}
 .header-inner{min-height:84px;display:flex;align-items:center;justify-content:space-between;gap:25px}
@@ -305,7 +305,7 @@ img{max-width:100%}
 @media(max-width:600px){
   .container{width:min(100% - 32px,480px)}
   .section-padding{padding-block:72px}
-  .announcement{min-height:32px;font-size:12px;letter-spacing:.06em}
+  .announcement{min-height:40px;font-size:14px;letter-spacing:.06em}
   .announcement-group,.announcement-item{gap:10px}
   .announcement-item{padding-right:10px}
   .announcement-track{animation-duration:24s}
