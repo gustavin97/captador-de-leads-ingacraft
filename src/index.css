@@ -59,7 +59,7 @@ img{max-width:100%}
 .hero-copy{position:relative;padding-top:15px}
 .eyebrow{display:flex;align-items:center;gap:13px;font:500 14px/1.4 "DM Mono",monospace;letter-spacing:.1em;color:#b84725}
 .eyebrow-line{width:28px;height:1px;background:#eb6138}
-.hero h1{max-width:720px;margin:24px 0 25px;font:800 clamp(52px,5.4vw,83px)/1.09 "Sora",sans-serif;letter-spacing:-.078em}
+.hero h1{max-width:720px;margin:24px 0 25px;font:800 clamp(48px,4.6vw,72px)/1.09 "Sora",sans-serif;letter-spacing:-.078em}
 .hero h1 em{font-style:normal;color:#eb6138}
 .hero-underline{position:relative;white-space:nowrap}
 .hero-underline::after{content:"";position:absolute;bottom:-5px;left:1px;width:100%;height:10px;background:#e4eb55;z-index:-1;transform:rotate(-1.2deg)}
@@ -269,7 +269,7 @@ img{max-width:100%}
 
 @media(max-width:1100px){
   .hero-grid{grid-template-columns:minmax(0,1fr) minmax(390px,.9fr);gap:35px}
-  .hero h1{font-size:clamp(49px,5.4vw,65px)}
+  .hero h1{font-size:clamp(44px,4.6vw,60px)}
   .showcase-grid{gap:30px}
   .showcase-art{min-height:500px;margin-right:-100px}
   .desktop-preview{width:90%}
@@ -329,8 +329,8 @@ img{max-width:100%}
   .hero-grid{padding-top:52px;padding-bottom:42px;gap:46px}
   .eyebrow{font-size:13px;gap:8px}
   .eyebrow-line{width:18px}
-  .hero h1{font-size:clamp(43px,10.7vw,61px);margin:19px 0 19px;line-height:1.13}
-  .hero-underline{white-space:normal}
+  .hero h1{font-size:clamp(32px,9vw,61px);margin:19px 0 19px;line-height:1.13}
+  .hero-underline{white-space:nowrap}
   .hero-lede{font-size:15px;line-height:1.75}
   .hero-actions{gap:22px;margin-top:27px}
   .button{min-height:50px;padding:0 13px;gap:11px;font-size:14px}
