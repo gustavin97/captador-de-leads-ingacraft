@@ -1,11 +1,12 @@
-import { ArrowUpRight, Check, Clock } from "lucide-react";
-import { discountPercent, formatPrice, offers, type ServiceId } from "../../data/offers";
+import { ArrowUpRight, CalendarClock, Check, Clock } from "lucide-react";
+import { CAMPAIGN_END, discountPercent, formatPrice, offers, type ServiceId } from "../../data/offers";
 
 export default function Offers({ onChoose }: { onChoose: (service: ServiceId) => void }) {
   return (
     <section className="offers section-padding" id="ofertas">
       <div className="container">
         <div className="offers-heading"><p className="section-kicker">BLACK NOVEMBER</p><div className="offers-heading-main"><h2>O projeto certo.<br /><span>O preço certo.</span></h2><p>Três caminhos para colocar seu negócio online. Escolha o que combina com seu momento.</p></div></div>
+        <p className="offers-urgency"><CalendarClock size={22} /><span><strong>Condição especial de Black November por tempo limitado, válida até {CAMPAIGN_END}.</strong> Solicite seu orçamento antes do encerramento da campanha.</span></p>
         <div className="offer-grid">
           {offers.map((offer) => (
             <article className={`offer-card offer-${offer.id}`} key={offer.id}>
@@ -17,7 +18,7 @@ export default function Offers({ onChoose }: { onChoose: (service: ServiceId) =>
             </article>
           ))}
         </div>
-        <p className="offers-note"><span>✳</span> Desconto de 50% sobre o valor original de cada projeto, válido para contratações feitas em novembro. Tudo o que está incluído aparece no card; necessidades extras são combinadas à parte.</p>
+        <p className="offers-note"><span>✳</span> Desconto de 50% sobre o valor original de cada projeto, válido para contratações feitas até {CAMPAIGN_END}. Tudo o que está incluído aparece no card; necessidades extras são combinadas à parte.</p>
       </div>
     </section>
   );

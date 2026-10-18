@@ -64,6 +64,8 @@ export const offers: Offer[] = [
   },
 ];
 
+export const CAMPAIGN_END = "30 de novembro de 2026";
+
 export const serviceName = (id: ServiceId) => offers.find((offer) => offer.id === id)?.title ?? id;
 
 export const discountPercent = (offer: Offer) => Math.round((1 - offer.price / offer.originalPrice) * 100);

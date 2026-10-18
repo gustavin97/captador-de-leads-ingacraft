@@ -21,7 +21,7 @@ export default function Hero({ selectedService, onServiceChange }: Props) {
           </div>
           <div className="hero-proof" aria-label="Destaques da campanha">
             <span><Check size={16} /> Preços fechados</span>
-            <span><Check size={16} /> Novembro inteiro</span>
+            <span><Check size={16} /> Válido até 30/11/2026</span>
             <span><Check size={16} /> Fale direto com a gente</span>
           </div>
           <div className="hero-bottom-mark">BLACK<br /><strong>NOVEMBER</strong><span>2026 ↗</span></div>
