@@ -1,5 +1,5 @@
 import { ArrowUpRight, Check, Clock } from "lucide-react";
-import { formatPrice, offers, type ServiceId } from "../../data/offers";
+import { discountPercent, formatPrice, offers, type ServiceId } from "../../data/offers";
 
 export default function Offers({ onChoose }: { onChoose: (service: ServiceId) => void }) {
   return (
@@ -13,11 +13,11 @@ export default function Offers({ onChoose }: { onChoose: (service: ServiceId) =>
               <div className="offer-card-main"><h3>{offer.title}</h3><p>{offer.description}</p><div className="offer-ideal">{offer.idealFor}</div></div>
               <div className="offer-divider" />
               <ul>{offer.points.map((point) => <li key={point}><Check size={16} />{point}</li>)}</ul>
-              <div className="offer-card-bottom"><div className="offer-price"><span>VALOR BLACK NOVEMBER</span><strong>{formatPrice(offer.price)}</strong></div><button type="button" onClick={() => onChoose(offer.id)} aria-label={`${offer.ctaLabel} por ${formatPrice(offer.price)}`}><span>{offer.ctaLabel}</span><span className="offer-button-icon" aria-hidden="true"><ArrowUpRight size={21} /></span></button></div>
+              <div className="offer-card-bottom"><div className="offer-price"><span>VALOR BLACK NOVEMBER</span><div className="offer-price-old"><s aria-label={`Preço original ${formatPrice(offer.originalPrice)}`}>De {formatPrice(offer.originalPrice)}</s><em>{discountPercent(offer)}% OFF</em></div><strong>por {formatPrice(offer.price)}</strong><small>Você economiza {formatPrice(offer.originalPrice - offer.price)}</small></div><button type="button" onClick={() => onChoose(offer.id)} aria-label={`${offer.ctaLabel} de ${formatPrice(offer.originalPrice)} por ${formatPrice(offer.price)}`}><span>{offer.ctaLabel}</span><span className="offer-button-icon" aria-hidden="true"><ArrowUpRight size={21} /></span></button></div>
             </article>
           ))}
         </div>
-        <p className="offers-note"><span>✳</span> Valores fechados para as ofertas anunciadas. O escopo de cada projeto é alinhado antes da contratação; necessidades extras são combinadas à parte.</p>
+        <p className="offers-note"><span>✳</span> Desconto de 50% sobre o valor original de cada projeto, válido para contratações feitas em novembro. Tudo o que está incluído aparece no card; necessidades extras são combinadas à parte.</p>
       </div>
     </section>
   );

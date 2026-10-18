@@ -4,6 +4,7 @@ export type Offer = {
   id: ServiceId;
   title: string;
   price: number;
+  originalPrice: number;
   deadline: string;
   description: string;
   idealFor: string;
@@ -17,6 +18,7 @@ export const offers: Offer[] = [
     id: "site",
     title: "Site institucional",
     price: 998.9,
+    originalPrice: 1997.8,
     deadline: "3 dias",
     description: "Um site completo para apresentar sua empresa com clareza e facilitar o primeiro contato.",
     idealFor: "Para quem quer ser encontrado e passar confiança.",
@@ -34,6 +36,7 @@ export const offers: Offer[] = [
     id: "landing",
     title: "Landing page",
     price: 598.9,
+    originalPrice: 1197.8,
     deadline: "1 dia",
     description: "Um site de conversão focado em apresentar sua oferta e levar o visitante à próxima ação.",
     idealFor: "Para campanhas, lançamentos e captação de contatos.",
@@ -45,6 +48,7 @@ export const offers: Offer[] = [
     id: "ecommerce",
     title: "E-commerce, loja virtual",
     price: 798.9,
+    originalPrice: 1597.8,
     deadline: "7 dias",
     description: "Uma loja virtual completa para expor seus produtos e vender online todos os dias.",
     idealFor: "Para quem quer vender produtos pela internet.",
@@ -61,6 +65,8 @@ export const offers: Offer[] = [
 ];
 
 export const serviceName = (id: ServiceId) => offers.find((offer) => offer.id === id)?.title ?? id;
+
+export const discountPercent = (offer: Offer) => Math.round((1 - offer.price / offer.originalPrice) * 100);
 
 export const formatPrice = (value: number) => new Intl.NumberFormat("pt-BR", {
   style: "currency",

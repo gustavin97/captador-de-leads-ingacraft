@@ -189,6 +189,12 @@ img{max-width:100%}
 .offer-price span{color:#555c56;font:500 13px "DM Mono",monospace;letter-spacing:.05em}
 .offer-site .offer-price span{color:#343731}
 .offer-price strong{font:800 42px/1 "Sora",sans-serif;letter-spacing:-.065em}
+.offer-price-old{display:flex;align-items:center;gap:10px;margin-top:6px}
+.offer-price-old s{color:#6b706a;font-size:17px;font-weight:700}
+.offer-site .offer-price-old s{color:#3b332e}
+.offer-price-old em{padding:3px 8px;background:#1c1f1f;border-radius:2px;color:#e4eb55;font:500 13px "DM Mono",monospace;font-style:normal}
+.offer-price small{color:#b84725;font-size:15px;font-weight:800}
+.offer-site .offer-price small{color:#1c1f1f}
 .offer-card-bottom button{display:flex;align-items:center;justify-content:space-between;gap:12px;width:100%;min-height:60px;padding:0 11px 0 17px;border:2px solid #1c1f1f;border-radius:3px;background:#1c1f1f;box-shadow:5px 5px 0 #eb6138;color:#fff;font-size:17px;font-weight:900;text-align:left;transition:transform .2s,background .2s,box-shadow .2s}
 .offer-button-icon{display:grid;place-items:center;flex:none;width:34px;height:34px;border-radius:2px;background:#e4eb55;color:#1c1f1f;transition:transform .2s}
 .offer-card-bottom button:hover,.offer-card-bottom button:focus-visible{transform:translateY(-3px);box-shadow:7px 7px 0 #eb6138}
