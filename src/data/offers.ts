@@ -8,6 +8,7 @@ export type Offer = {
   idealFor: string;
   points: string[];
   label: string;
+  ctaLabel: string;
 };
 
 export const offers: Offer[] = [
@@ -19,6 +20,7 @@ export const offers: Offer[] = [
     idealFor: "Para quem quer ser encontrado e passar confiança.",
     points: ["Sua marca em um endereço próprio", "Informações essenciais em um só lugar", "Caminho claro para o contato"],
     label: "Mais procurado",
+    ctaLabel: "Quero meu site",
   },
   {
     id: "landing",
@@ -28,6 +30,7 @@ export const offers: Offer[] = [
     idealFor: "Para campanhas, lançamentos e captação de contatos.",
     points: ["Mensagem centrada na sua oferta", "Jornada direta até a ação", "Boa base para campanhas"],
     label: "Foco em conversão",
+    ctaLabel: "Quero minha landing page",
   },
   {
     id: "ecommerce",
@@ -37,6 +40,7 @@ export const offers: Offer[] = [
     idealFor: "Para quem quer vender produtos pela internet.",
     points: ["Vitrine para seus produtos", "Organização por categorias", "Experiência de compra mais simples"],
     label: "Sua loja online",
+    ctaLabel: "Quero meu e-commerce",
   },
 ];
 

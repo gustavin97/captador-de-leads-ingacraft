@@ -13,7 +13,7 @@ export default function Offers({ onChoose }: { onChoose: (service: ServiceId) =>
               <div className="offer-card-main"><h3>{offer.title}</h3><p>{offer.description}</p><div className="offer-ideal">{offer.idealFor}</div></div>
               <div className="offer-divider" />
               <ul>{offer.points.map((point) => <li key={point}><Check size={16} />{point}</li>)}</ul>
-              <div className="offer-card-bottom"><div className="offer-price"><span>VALOR BLACK NOVEMBER</span><strong>{formatPrice(offer.price)}</strong></div><button type="button" onClick={() => onChoose(offer.id)} aria-label={`Tenho interesse em ${offer.title} por ${formatPrice(offer.price)}`}>Quero este <ArrowUpRight size={21} /></button></div>
+              <div className="offer-card-bottom"><div className="offer-price"><span>VALOR BLACK NOVEMBER</span><strong>{formatPrice(offer.price)}</strong></div><button type="button" onClick={() => onChoose(offer.id)} aria-label={`${offer.ctaLabel} por ${formatPrice(offer.price)}`}><span>{offer.ctaLabel}</span><span className="offer-button-icon" aria-hidden="true"><ArrowUpRight size={21} /></span></button></div>
             </article>
           ))}
         </div>

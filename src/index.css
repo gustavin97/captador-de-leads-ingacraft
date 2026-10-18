@@ -168,13 +168,13 @@ img{max-width:100%}
 .offers h2 span{color:#eb6138}
 .offers-heading-main>p{max-width:320px;margin:0 0 6px;color:#666a66;font-size:14px;line-height:1.8}
 .offer-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-.offer-card{display:flex;flex-direction:column;min-height:550px;padding:25px;background:#f8f7f3;border:1px solid #e8e9e1;transition:transform .2s,box-shadow .2s}
+.offer-card{display:flex;flex-direction:column;min-height:590px;padding:25px;background:#f8f7f3;border:1px solid #e8e9e1;transition:transform .2s,box-shadow .2s}
 .offer-card:hover{transform:translateY(-5px);box-shadow:8px 8px 0 #e4eb55}
 .offer-site{background:#eb6138;border-color:#eb6138}
 .offer-card-header{display:flex;justify-content:flex-end;align-items:center;gap:8px}
 .offer-tag{display:inline-block;padding:8px 11px;background:#fff;border:1px solid #e4e5df;border-radius:100px;color:#4d544e;font:500 11px "DM Mono",monospace;letter-spacing:0;white-space:nowrap}
 .offer-site .offer-tag{background:#e4eb55;border-color:#e4eb55;color:#1c1f1f}
-.offer-card-main{min-height:213px;padding-top:75px}
+.offer-card-main{min-height:195px;padding-top:55px}
 .offer-card h3{margin:0 0 12px;font:800 29px/1.2 "Sora",sans-serif;letter-spacing:-.06em}
 .offer-card-main>p{max-width:300px;margin:0;color:#555c55;font-size:14px;line-height:1.7}
 .offer-site .offer-card-main>p{color:#3b332e}
@@ -186,14 +186,19 @@ img{max-width:100%}
 .offer-site li{color:#2d302a}
 .offer-card li svg{flex:none;color:#eb6138}
 .offer-site li svg{color:#1c1f1f}
-.offer-card-bottom{display:flex;align-items:end;justify-content:space-between;gap:15px;margin-top:auto;padding-top:21px;border-top:1px solid #d9dcd3}
+.offer-card-bottom{display:flex;align-items:stretch;flex-direction:column;gap:20px;margin-top:auto;padding-top:21px;border-top:1px solid #d9dcd3}
 .offer-site .offer-card-bottom{border-color:rgba(28,31,31,.35)}
 .offer-price{display:grid;gap:3px}
 .offer-price span{color:#555c56;font:500 11px "DM Mono",monospace;letter-spacing:.05em}
 .offer-site .offer-price span{color:#343731}
 .offer-price strong{font:800 42px/1 "Sora",sans-serif;letter-spacing:-.065em}
-.offer-card-bottom button{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:45px;padding:0 12px;border:0;border-radius:3px;background:#1c1f1f;color:#fff;font-size:12px;font-weight:800;white-space:nowrap;transition:transform .2s,background .2s}
-.offer-card-bottom button:hover,.offer-card-bottom button:focus-visible{transform:translateY(-3px);background:#e4eb55;color:#1c1f1f}
+.offer-card-bottom button{display:flex;align-items:center;justify-content:space-between;gap:12px;width:100%;min-height:60px;padding:0 11px 0 17px;border:2px solid #1c1f1f;border-radius:3px;background:#1c1f1f;box-shadow:5px 5px 0 #eb6138;color:#fff;font-size:15px;font-weight:900;text-align:left;transition:transform .2s,background .2s,box-shadow .2s}
+.offer-button-icon{display:grid;place-items:center;flex:none;width:34px;height:34px;border-radius:2px;background:#e4eb55;color:#1c1f1f;transition:transform .2s}
+.offer-card-bottom button:hover,.offer-card-bottom button:focus-visible{transform:translateY(-3px);box-shadow:7px 7px 0 #eb6138}
+.offer-card-bottom button:hover .offer-button-icon,.offer-card-bottom button:focus-visible .offer-button-icon{transform:rotate(45deg)}
+.offer-site .offer-card-bottom button{background:#e4eb55;box-shadow:5px 5px 0 #1c1f1f;color:#1c1f1f}
+.offer-site .offer-card-bottom button:hover,.offer-site .offer-card-bottom button:focus-visible{background:#f1f78c;box-shadow:7px 7px 0 #1c1f1f}
+.offer-site .offer-button-icon{background:#1c1f1f;color:#e4eb55}
 .offers-note{display:flex;align-items:start;gap:10px;max-width:790px;margin:23px auto 0;color:#666e66;text-align:center;font-size:12px;line-height:1.7}
 .offers-note span{color:#eb6138;font-size:16px;line-height:1.2}
 
@@ -290,7 +295,7 @@ img{max-width:100%}
   .showcase-copy{max-width:650px}
   .showcase-art{max-width:600px;width:100%;margin:auto}
   .offer-grid{grid-template-columns:1fr 1fr}
-  .offer-card{min-height:505px;padding:24px}
+  .offer-card{min-height:560px;padding:24px}
   .offer-ecommerce{grid-column:span 2;min-height:410px}
   .offer-ecommerce .offer-card-main{padding-top:35px;min-height:150px}
   .offer-ecommerce ul{min-height:70px}
@@ -354,7 +359,7 @@ img{max-width:100%}
   .preview-label{font-size:7px;bottom:-5px;right:0}
   .offers-heading{margin-bottom:28px}
   .offer-grid{grid-template-columns:1fr}
-  .offer-card,.offer-ecommerce{grid-column:auto;min-height:475px;padding:25px}
+  .offer-card,.offer-ecommerce{grid-column:auto;min-height:0;padding:25px}
   .offer-card-main,.offer-ecommerce .offer-card-main{padding-top:45px;min-height:180px}
   .offer-card ul,.offer-ecommerce ul{min-height:100px}
   .offer-card h3{font-size:28px}
@@ -382,5 +387,5 @@ img{max-width:100%}
   .footer-bottom{display:grid;gap:9px;font-size:11px}
   .footer-wordmark{font-size:clamp(57px,15vw,90px)}
 }
-@media(max-width:360px){.offer-card-bottom{align-items:stretch;flex-direction:column}.offer-card-bottom button{width:100%}.hero-actions{gap:14px}}
+@media(max-width:360px){.hero-actions{gap:14px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition-duration:.01ms!important;animation-duration:.01ms!important}}
