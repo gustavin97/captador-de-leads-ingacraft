@@ -4,6 +4,7 @@ export type Offer = {
   id: ServiceId;
   title: string;
   price: number;
+  deadline: string;
   description: string;
   idealFor: string;
   points: string[];
@@ -16,6 +17,7 @@ export const offers: Offer[] = [
     id: "site",
     title: "Site institucional",
     price: 998.9,
+    deadline: "3 dias",
     description: "Um site completo para apresentar sua empresa com clareza e facilitar o primeiro contato.",
     idealFor: "Para quem quer ser encontrado e passar confiança.",
     points: [
@@ -32,6 +34,7 @@ export const offers: Offer[] = [
     id: "landing",
     title: "Landing page",
     price: 598.9,
+    deadline: "1 dia",
     description: "Um site de conversão focado em apresentar sua oferta e levar o visitante à próxima ação.",
     idealFor: "Para campanhas, lançamentos e captação de contatos.",
     points: ["Site de conversão", "Página única", "Identidade visual do seu negócio", "Botões do WhatsApp"],
@@ -42,6 +45,7 @@ export const offers: Offer[] = [
     id: "ecommerce",
     title: "E-commerce, loja virtual",
     price: 798.9,
+    deadline: "7 dias",
     description: "Uma loja virtual completa para expor seus produtos e vender online todos os dias.",
     idealFor: "Para quem quer vender produtos pela internet.",
     points: [

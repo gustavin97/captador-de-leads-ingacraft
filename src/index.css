@@ -163,7 +163,8 @@ img{max-width:100%}
 .offer-card{display:flex;flex-direction:column;min-height:590px;padding:25px;background:#f8f7f3;border:1px solid #e8e9e1;transition:transform .2s,box-shadow .2s}
 .offer-card:hover{transform:translateY(-5px);box-shadow:8px 8px 0 #e4eb55}
 .offer-site{background:#eb6138;border-color:#eb6138}
-.offer-card-header{display:flex;justify-content:flex-end;align-items:center;gap:8px}
+.offer-card-header{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:8px}
+.offer-deadline{display:inline-flex;align-items:center;gap:6px;padding:8px 11px;background:#1c1f1f;border-radius:100px;color:#e4eb55;font:500 13px "DM Mono",monospace;white-space:nowrap}
 .offer-tag{display:inline-block;padding:8px 11px;background:#fff;border:1px solid #e4e5df;border-radius:100px;color:#4d544e;font:500 13px "DM Mono",monospace;letter-spacing:0;white-space:nowrap}
 .offer-site .offer-tag{background:#e4eb55;border-color:#e4eb55;color:#1c1f1f}
 .offer-card-main{min-height:195px;padding-top:55px}

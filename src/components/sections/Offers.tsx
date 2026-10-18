@@ -1,4 +1,4 @@
-import { ArrowUpRight, Check } from "lucide-react";
+import { ArrowUpRight, Check, Clock } from "lucide-react";
 import { formatPrice, offers, type ServiceId } from "../../data/offers";
 
 export default function Offers({ onChoose }: { onChoose: (service: ServiceId) => void }) {
@@ -9,7 +9,7 @@ export default function Offers({ onChoose }: { onChoose: (service: ServiceId) =>
         <div className="offer-grid">
           {offers.map((offer) => (
             <article className={`offer-card offer-${offer.id}`} key={offer.id}>
-              <div className="offer-card-header"><span className="offer-tag">{offer.label}</span></div>
+              <div className="offer-card-header"><span className="offer-deadline"><Clock size={15} /> Prazo: {offer.deadline}</span><span className="offer-tag">{offer.label}</span></div>
               <div className="offer-card-main"><h3>{offer.title}</h3><p>{offer.description}</p><div className="offer-ideal">{offer.idealFor}</div></div>
               <div className="offer-divider" />
               <ul>{offer.points.map((point) => <li key={point}><Check size={16} />{point}</li>)}</ul>
