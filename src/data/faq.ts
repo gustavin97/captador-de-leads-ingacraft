@@ -1,7 +1,7 @@
 export const faq = [
   {
     question: "Os valores da Black November são fechados?",
-    answer: "Sim. Site institucional por R$ 998,90, landing page por R$ 598,90 e e-commerce por R$ 800. Antes de começar, alinhamos o escopo do seu projeto. Necessidades extras são combinadas separadamente.",
+    answer: "Sim. Site institucional por R$ 998,90, landing page por R$ 598,90 e e-commerce por R$ 798,90. Antes de começar, alinhamos o escopo do seu projeto. Necessidades extras são combinadas separadamente.",
   },
   {
     question: "Qual opção faz mais sentido para meu negócio?",
