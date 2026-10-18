@@ -31,7 +31,7 @@ export default function Hero({ selectedService, onServiceChange }: Props) {
           <LeadForm selectedService={selectedService} onServiceChange={onServiceChange} />
         </div>
       </div>
-      <div className="hero-edge container"><span>01 / 05</span><span>Role para descobrir <ArrowDownRight size={17} /></span></div>
+      <div className="hero-edge container"><span>INGACRAFT · BLACK NOVEMBER</span><span>Role para descobrir <ArrowDownRight size={17} /></span></div>
     </section>
   );
 }

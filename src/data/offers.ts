@@ -2,7 +2,6 @@ export type ServiceId = "site" | "landing" | "ecommerce";
 
 export type Offer = {
   id: ServiceId;
-  number: string;
   title: string;
   price: number;
   description: string;
@@ -14,7 +13,6 @@ export type Offer = {
 export const offers: Offer[] = [
   {
     id: "site",
-    number: "01",
     title: "Site profissional",
     price: 500,
     description: "Um lugar para apresentar sua empresa com clareza e facilitar o primeiro contato.",
@@ -24,7 +22,6 @@ export const offers: Offer[] = [
   },
   {
     id: "landing",
-    number: "02",
     title: "Landing page",
     price: 600,
     description: "Uma página focada em apresentar uma oferta e conduzir o visitante à próxima ação.",
@@ -34,7 +31,6 @@ export const offers: Offer[] = [
   },
   {
     id: "ecommerce",
-    number: "03",
     title: "E-commerce",
     price: 800,
     description: "Uma loja virtual para organizar seus produtos e começar a receber pedidos online.",

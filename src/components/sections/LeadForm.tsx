@@ -41,7 +41,7 @@ export default function LeadForm({ selectedService, onServiceChange }: Props) {
         </div>
         <label>Nome da empresa ou negócio<input type="text" name="company" autoComplete="organization" placeholder="Qual é a sua marca?" value={company} onChange={(event) => setCompany(event.target.value)} required maxLength={100} /></label>
         <label>O que você precisa?<select name="service" required value={selectedService} onChange={(event) => onServiceChange(event.target.value as ServiceId | "")}><option value="">Selecione uma opção</option>{offers.map((offer) => <option value={offer.id} key={offer.id}>{offer.title} — R$ {offer.price}</option>)}</select></label>
-        <label>Conte um pouco mais <span className="optional">(opcional)</span><textarea name="details" rows={2} placeholder="Sua ideia, prazo ou alguma dúvida..." value={details} onChange={(event) => setDetails(event.target.value)} maxLength={600} /></label>
+        <label><span className="field-label">Conte um pouco mais <span className="optional">(opcional)</span></span><textarea name="details" rows={2} placeholder="Sua ideia, prazo ou alguma dúvida..." value={details} onChange={(event) => setDetails(event.target.value)} maxLength={600} /></label>
         {error && <p className="form-error" role="alert">{error}</p>}
         <button className="form-submit" type="submit">Conversar pelo WhatsApp <ArrowUpRight size={20} /></button>
         <p className="form-note"><LockKeyhole size={13} /> O WhatsApp abrirá com sua mensagem pronta. Envie-a para concluir o contato.</p>

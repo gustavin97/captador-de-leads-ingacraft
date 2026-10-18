@@ -5,7 +5,7 @@ export default function Showcase({ onContact }: { onContact: () => void }) {
     <section className="showcase section-padding">
       <div className="container showcase-grid">
         <div className="showcase-copy">
-          <p className="section-kicker section-kicker-light"><span>02</span> / IDEIA BOA PRECISA APARECER</p>
+          <p className="section-kicker section-kicker-light">IDEIA BOA PRECISA APARECER</p>
           <h2>Uma página bonita é só o começo. <span>Ela precisa fazer sentido para quem chega.</span></h2>
           <p className="showcase-lede">Organizamos sua presença digital para que a mensagem fique clara, a navegação seja simples e o próximo passo apareça no momento certo.</p>
           <ul className="showcase-list">
@@ -26,7 +26,7 @@ export default function Showcase({ onContact }: { onContact: () => void }) {
             </div>
           </div>
           <div className="phone-preview"><div className="phone-notch" /><div className="phone-content"><b>SUA MARCA<span>✳</span></b><div className="phone-image"><i /></div><small>UM NOVO JEITO DE APARECER</small><strong>Sua marca,<br /><em>seu espaço.</em></strong><span>Começar agora ↗</span></div></div>
-          <span className="preview-label">EXEMPLO VISUAL ILUSTRATIVO / 01</span>
+          <span className="preview-label">EXEMPLO VISUAL ILUSTRATIVO</span>
         </div>
       </div>
     </section>
