@@ -1,6 +1,6 @@
 import { useState, type FormEvent } from "react";
 import { ArrowUpRight, LockKeyhole } from "lucide-react";
-import { offers, type ServiceId } from "../../data/offers";
+import { formatPrice, offers, type ServiceId } from "../../data/offers";
 import { buildWhatsAppUrl, isValidBrazilianPhone } from "../../lib/lead";
 
 type Props = {
@@ -40,7 +40,7 @@ export default function LeadForm({ selectedService, onServiceChange }: Props) {
           <label>WhatsApp<input type="tel" name="phone" autoComplete="tel" inputMode="tel" placeholder="(44) 99999-9999" value={phone} onChange={(event) => setPhone(event.target.value)} required aria-invalid={!!error && error.includes("WhatsApp")} /></label>
         </div>
         <label>Nome da empresa ou negócio<input type="text" name="company" autoComplete="organization" placeholder="Qual é a sua marca?" value={company} onChange={(event) => setCompany(event.target.value)} required maxLength={100} /></label>
-        <label>O que você precisa?<select name="service" required value={selectedService} onChange={(event) => onServiceChange(event.target.value as ServiceId | "")}><option value="">Selecione uma opção</option>{offers.map((offer) => <option value={offer.id} key={offer.id}>{offer.title} — R$ {offer.price}</option>)}</select></label>
+        <label>O que você precisa?<select name="service" required value={selectedService} onChange={(event) => onServiceChange(event.target.value as ServiceId | "")}><option value="">Selecione uma opção</option>{offers.map((offer) => <option value={offer.id} key={offer.id}>{offer.title} — {formatPrice(offer.price)}</option>)}</select></label>
         <label><span className="field-label">Conte um pouco mais <span className="optional">(opcional)</span></span><textarea name="details" rows={2} placeholder="Sua ideia, prazo ou alguma dúvida..." value={details} onChange={(event) => setDetails(event.target.value)} maxLength={600} /></label>
         {error && <p className="form-error" role="alert">{error}</p>}
         <button className="form-submit" type="submit">Conversar pelo WhatsApp <ArrowUpRight size={20} /></button>

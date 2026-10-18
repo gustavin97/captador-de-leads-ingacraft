@@ -14,7 +14,7 @@ export default function Hero({ selectedService, onServiceChange }: Props) {
         <div className="hero-copy">
           <div className="eyebrow"><span className="eyebrow-line" /> CAMPANHA DE NOVEMBRO 2026</div>
           <h1>Seu negócio merece <span className="hero-underline">um site que</span> <em>faz acontecer<span className="orange-period">.</span></em></h1>
-          <p className="hero-lede">Chegou a Black November da IngaCraft. Site profissional, landing page ou loja virtual com um preço para tirar seu projeto do papel.</p>
+          <p className="hero-lede">Chegou a Black November da IngaCraft. Site institucional, landing page ou loja virtual com um preço para tirar seu projeto do papel.</p>
           <div className="hero-actions">
             <a className="button button-orange" href="#ofertas">Conhecer as ofertas <ArrowUpRight size={19} /></a>
             <a className="text-link" href="#por-que">Entenda melhor <ArrowDownRight size={18} /></a>

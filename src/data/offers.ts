@@ -14,21 +14,27 @@ export type Offer = {
 export const offers: Offer[] = [
   {
     id: "site",
-    title: "Site profissional",
-    price: 500,
-    description: "Um lugar para apresentar sua empresa com clareza e facilitar o primeiro contato.",
+    title: "Site institucional",
+    price: 998.9,
+    description: "Um site completo para apresentar sua empresa com clareza e facilitar o primeiro contato.",
     idealFor: "Para quem quer ser encontrado e passar confiança.",
-    points: ["Sua marca em um endereço próprio", "Informações essenciais em um só lugar", "Caminho claro para o contato"],
+    points: [
+      "Mais de 3 páginas",
+      "Automação de formulário de leads direto no WhatsApp",
+      "Botões de contato",
+      "Domínio profissional + e-mail profissional",
+      "Design empresarial moderno",
+    ],
     label: "Mais procurado",
     ctaLabel: "Quero meu site",
   },
   {
     id: "landing",
     title: "Landing page",
-    price: 600,
-    description: "Uma página focada em apresentar uma oferta e conduzir o visitante à próxima ação.",
+    price: 598.9,
+    description: "Um site de conversão focado em apresentar sua oferta e levar o visitante à próxima ação.",
     idealFor: "Para campanhas, lançamentos e captação de contatos.",
-    points: ["Mensagem centrada na sua oferta", "Jornada direta até a ação", "Boa base para campanhas"],
+    points: ["Site de conversão", "Página única", "Identidade visual do seu negócio", "Botões do WhatsApp"],
     label: "Foco em conversão",
     ctaLabel: "Quero minha landing page",
   },
@@ -49,5 +55,5 @@ export const serviceName = (id: ServiceId) => offers.find((offer) => offer.id ==
 export const formatPrice = (value: number) => new Intl.NumberFormat("pt-BR", {
   style: "currency",
   currency: "BRL",
-  maximumFractionDigits: 0,
+  minimumFractionDigits: 2,
 }).format(value);
