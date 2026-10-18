@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#F8F7F3"/>
+  <rect y="0" width="1200" height="22" fill="#EB6138"/>
+  <text x="70" y="102" fill="#1C1F1F" font-family="Arial,sans-serif" font-size="34" font-weight="700">INGACRAFT</text>
+  <rect x="70" y="152" width="408" height="56" rx="28" fill="#E4EB55"/>
+  <text x="100" y="189" fill="#1C1F1F" font-family="Arial,sans-serif" font-size="27" font-weight="700">BLACK NOVEMBER</text>
+  <text x="70" y="320" fill="#1C1F1F" font-family="Arial,sans-serif" font-size="71" font-weight="700">Seu projeto digital</text>
+  <text x="70" y="408" fill="#1C1F1F" font-family="Arial,sans-serif" font-size="71" font-weight="700">começa aqui.</text>
+  <text x="70" y="526" fill="#EB6138" font-family="Arial,sans-serif" font-size="51" font-weight="700">Site profissional por R$ 500</text>
+</svg>
