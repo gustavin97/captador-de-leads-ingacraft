@@ -13,7 +13,7 @@ export const faq = [
   },
   {
     question: "Quanto tempo leva para ficar pronto?",
-    answer: "O prazo depende do formato escolhido, do conteúdo disponível e do escopo. Combinamos o cronograma antes de iniciar o projeto.",
+    answer: "Landing page fica pronta em 1 dia, site institucional em 3 dias e e-commerce em 7 dias. O prazo começa a contar quando recebemos o conteúdo do seu projeto.",
   },
   {
     question: "Posso conversar antes de decidir?",
