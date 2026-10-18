@@ -136,35 +136,10 @@ img{max-width:100%}
 .desktop-chrome>span{width:5px;height:5px;border-radius:50%;background:#c3c8bd}
 .desktop-chrome>span:first-child{background:#eb6138}
 .desktop-chrome>div{min-width:160px;margin:auto;color:#9da197;text-align:center;font:400 6px "DM Mono",monospace}
-.desktop-content{padding:15px;color:#1c1f1f}
-.mock-nav{display:flex;align-items:center;justify-content:space-between;height:23px;gap:8px}
-.mock-nav b{font:800 11px "Sora",sans-serif;letter-spacing:-.07em}
-.mock-nav b span,.phone-content b span{color:#eb6138}
-.mock-nav i{font:500 6px "Manrope",sans-serif;font-style:normal;color:#6b6e67}
-.mock-nav>span{padding:5px 7px;background:#1c1f1f;color:#fff;font:600 5px "Manrope",sans-serif}
-.mock-hero{display:grid;grid-template-columns:1.12fr .88fr;gap:10px;padding:24px 9px 13px;min-height:230px}
-.mock-hero-copy{display:flex;flex-direction:column;align-items:start;justify-content:center}
-.mock-hero-copy small{color:#eb6138;font:600 5px "DM Mono",monospace;letter-spacing:.17em}
-.mock-hero-copy strong{margin:9px 0;font:800 clamp(17px,2vw,28px)/1.1 "Sora",sans-serif;letter-spacing:-.06em}
-.mock-hero-copy strong em{font-style:normal;color:#eb6138}
-.mock-hero-copy p{max-width:200px;margin:0 0 13px;color:#72766e;font-size:6px;line-height:1.6}
-.mock-hero-copy>span{padding:7px 11px;background:#e4eb55;color:#1c1f1f;font-size:6px;font-weight:800}
-.mock-visual{position:relative;overflow:hidden;display:flex;align-items:end;padding:13px;background:#eb6138}
-.mock-visual-circle{position:absolute;width:170px;height:170px;border:23px solid rgba(255,255,255,.22);border-radius:50%;right:-55px;top:-27px}
-.mock-visual-line{position:absolute;width:90px;height:90px;border:1px solid rgba(255,255,255,.6);border-radius:50%;left:-31px;bottom:-29px}
-.mock-visual>span{position:relative;color:#1c1f1f;font:800 25px/.95 "Sora",sans-serif;letter-spacing:-.08em}
-.mock-bottom{display:flex;gap:8px;margin:0 9px;padding:9px 0;border-top:1px solid #e4e5db;color:#8c9187;font:500 5px "DM Mono",monospace;letter-spacing:.1em}
+.desktop-content{display:block;width:100%;height:auto;border-radius:0 0 5px 5px}
 .phone-preview{position:absolute;z-index:2;right:-11px;bottom:21px;width:151px;height:288px;padding:8px;background:#101211;border:2px solid #4b504d;border-radius:23px;box-shadow:0 18px 30px rgba(0,0,0,.55);transform:rotate(8deg)}
 .phone-notch{position:absolute;top:7px;left:50%;z-index:2;width:44px;height:9px;transform:translateX(-50%);border-radius:0 0 8px 8px;background:#101211}
-.phone-content{height:100%;overflow:hidden;padding:16px 9px 8px;background:#f9f7f1;border-radius:15px;color:#1c1f1f}
-.phone-content b{font:800 7px "Sora",sans-serif}
-.phone-image{position:relative;overflow:hidden;height:106px;margin:14px 0 10px;background:#eb6138}
-.phone-image::before{content:"";position:absolute;width:140px;height:140px;top:-58px;left:32px;border:20px solid #f5bb8c;border-radius:50%}
-.phone-image i{position:absolute;width:63px;height:63px;bottom:-15px;left:-15px;background:#e4eb55;border-radius:50%}
-.phone-content small{display:block;color:#eb6138;font:500 4px "DM Mono",monospace;letter-spacing:.11em}
-.phone-content strong{display:block;margin:6px 0 9px;font:800 13px/1.1 "Sora",sans-serif;letter-spacing:-.07em}
-.phone-content strong em{font-style:normal;color:#eb6138}
-.phone-content>span{display:inline-block;padding:5px 8px;background:#1c1f1f;color:#fff;font-size:5px;font-weight:700}
+.phone-content{display:block;width:100%;height:100%;object-fit:cover;object-position:top;background:#1c1f1f;border-radius:15px}
 .preview-label{position:absolute;right:21px;bottom:0;color:#9da49d;font:500 9px "DM Mono",monospace;letter-spacing:.07em}
 
 /* Offers */
@@ -277,7 +252,6 @@ img{max-width:100%}
   .showcase-art{min-height:455px}
   .desktop-preview{width:96%}
   .phone-preview{right:-9px;width:126px;height:244px}
-  .phone-image{height:80px}
   .offer-card{padding:19px}
   .offer-card h3{font-size:25px}
   .offer-price strong{font-size:35px}
@@ -355,15 +329,9 @@ img{max-width:100%}
   .showcase-lede{font-size:14px}
   .showcase-art{min-height:340px}
   .desktop-preview{width:94%;border-width:5px}
-  .mock-hero{min-height:165px;padding-top:15px}
-  .mock-hero-copy strong{font-size:17px}
-  .mock-visual>span{font-size:16px}
   .phone-preview{right:-4px;bottom:9px;width:92px;height:177px;padding:5px;border-radius:17px}
   .phone-notch{top:5px;width:31px;height:6px}
-  .phone-content{padding:11px 6px 4px;border-radius:12px}
-  .phone-image{height:55px;margin:9px 0 5px}
-  .phone-content strong{font-size:9px}
-  .phone-content>span{font-size:4px;padding:3px 4px}
+  .phone-content{border-radius:12px}
   .preview-label{font-size:7px;bottom:-5px;right:0}
   .offers-heading{margin-bottom:28px}
   .offer-grid{grid-template-columns:1fr}
