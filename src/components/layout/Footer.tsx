@@ -23,7 +23,7 @@ export default function Footer() {
           </nav>
           <div className="footer-info">
             <h2>Vamos conversar</h2>
-            <a href={whatsappUrl} target="_blank" rel="noreferrer"><MessageCircle size={18} /> +55 (44) 99983-0226</a>
+            <a href={whatsappUrl} target="_blank" rel="noreferrer"><MessageCircle size={18} /> +55 (44) 9965-9801</a>
             <a href="https://ingacraft.com.br/" target="_blank" rel="noreferrer">Conheça a IngaCraft <ArrowUpRight size={16} /></a>
             <span>Maringá, Paraná</span>
           </div>

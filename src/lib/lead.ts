@@ -1,6 +1,6 @@
 import { serviceName, type ServiceId } from "../data/offers";
 
-export const WHATSAPP_NUMBER = "5544999830226";
+export const WHATSAPP_NUMBER = "554499659801";
 
 export type Lead = {
   name: string;
