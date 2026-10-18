@@ -29,7 +29,7 @@ export default function Showcase({ onContact }: { onContact: () => void }) {
         <div className="showcase-copy">
           <p className="section-kicker section-kicker-light">BLACK NOVEMBER</p>
           <p className="showcase-off"><strong>50% OFF</strong><span>em todos os projetos durante novembro</span></p>
-          <h2>Seu negócio na internet <span>pela metade do preço.</span></h2>
+          <h2><span>Seu negócio na internet</span> <span>pela metade do preço.</span></h2>
           <p className="showcase-lede">Em novembro, site institucional, landing page e loja virtual saem com 50% OFF. Projetos como este, feitos para passar confiança e trazer clientes.</p>
           <ul className="showcase-list">
             <li><Check size={16} /> 50% OFF em todos os projetos</li>
